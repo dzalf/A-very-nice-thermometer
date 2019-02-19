@@ -4,7 +4,7 @@ A decorative thermometer based on the LM95071
 
 This project consists of a decorative piece which its only purpose is to display the current temperature of your room. **See images below!**
 
-It uses an Arduino Pro Micro Leonardo and an LM95071 as the temperature probe; a digital SPI sensor for which I developed a library. The display is a (cute) DL430M.
+It uses an Arduino Pro Micro Leonardo and an LM95071 as the temperature probe; a digital SPI sensor for which I developed a [library](https://github.com/dzalf/LM95071_Temperature_Sensor). The display is a (cute) DL430M.
 
 The PCB files were drawn in kiCAD and the schematics for the main board and daughter board are included.
 
