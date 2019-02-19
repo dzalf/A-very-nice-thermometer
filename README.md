@@ -8,7 +8,7 @@ It uses an Arduino Pro Micro Leonardo and the TI LM95071 as the temperature prob
 
 The PCB files were drawn in kiCAD and the schematics for the main board and daughter board are included.
 
-The first firmware drives a CD4511, a BCD to 7 segment decoder/driver. The cathodes from the display are sequentially switched and driver using BC548 SMD transistors.
+The first firmware drives a CD4511, a BCD to 7 segment decoder/driver. The cathodes from the display are sequentially switched and driven using BC850 SMD transistors.
 
 This is the first revision of this project. It has been tested and during this stage a minor issue was found on the wiring of the display driver
 
@@ -22,7 +22,7 @@ dzalf :sunglasses:
 2. Review the power managment block from the PCB
 3. Design the board with an standalone Arduino
 4. Therefore now it could be miniaturised
-
+5. When ready I will sell this complete populated kits on Tindie!
 
 
 ![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/pic1.jpg)
