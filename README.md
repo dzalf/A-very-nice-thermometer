@@ -21,7 +21,7 @@ dzalf :sunglasses:
 1. Debug the PCB designs
 2. Review the power managment block from the PCB
 3. Design the board with an standalone Arduino
-4. Therefore now it could be miniaturised
+4. Then it could be miniaturised
 5. When ready I will sell this complete populated kits on Tindie!
 
 
