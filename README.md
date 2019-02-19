@@ -28,3 +28,5 @@ dzalf :sunglasses:
 ![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/pic1.jpg)
 ![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/view1.png)
 ![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/view2.png)
+![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/DaughterBoard/daughterDisplay/view1.png)
+![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/DaughterBoard/daughterDisplay/view2.png)
