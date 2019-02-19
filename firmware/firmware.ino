@@ -13,7 +13,7 @@ const int SSP = 17;
 const int dimPin = 10;
 const int potDim = A3;
 const int samples = 50;
-int outputs[4] = {6, 7, 8, 9}; // A,B,C,D inputs
+int outputs[4] = {6, 7, 8, 9}; // A,B,C,D inputs from the CD4511 driver
 int cathodes[3] = {A2, A1, A0};
 
 // States declaration
@@ -33,7 +33,7 @@ byte BCD[10][4] = {
   {1, 0, 0, 1},
 };
 
-LM95071 SPI_Sensor(SSP, DEBUGGING); // Instantiation of LM95071 Sensor
+LM95071 SPI_Sensor(SSP, DEBUGGING); // Instantiation of LM95071 Sensor...DEBUGGING is off by default
 
 void setup() {
 
@@ -52,7 +52,7 @@ void setup() {
 
 void loop() {
 
-  intensity =  map(analogRead(potDim), 10, 1010, 80, 255); // Verify this. It's presenting an erratic behaviour
+  intensity =  map(analogRead(potDim), 10, 1010, 80, 255); // With this we are sure that the brightness is adequate
 
   analogWrite(dimPin, intensity);
 
@@ -60,12 +60,12 @@ void loop() {
     acumulator +=  SPI_Sensor.getTemperature();
   }
 
-  temperature = acumulator / samples;
+  temperature = acumulator / samples; // To obtain a smoother response
 
   displayTemperature(temperature);
 
   acumulator = 0.0;
-  temperature = 0.0;
+ 
 }
 
 void initializeDisplayDecoder(void) {
@@ -87,12 +87,18 @@ void initializeDisplayDecoder(void) {
   }
 
 }
-void displayTemperature(float temp) {
 
+// This is where the magic happens!
+
+void displayTemperature(float temp) {
+  
+  // The value of the temperature is segmented in units, tens and tenths
   num[0] =  (unsigned int)(temp * 10)  % 10;
   num[1] = ((unsigned int)(temp * 10 / 10)) % 10;
   num[2] = ((unsigned int)(temp * 10 / 100)) % 10;
-
+  
+  // The cathodes are driven according to the BCD code and the result from the previous modulo values
+  
   for (int numIndex = 0; numIndex < 3; numIndex++) {
     for (int catIndex = 0; catIndex < 3; catIndex++) {
       digitalWrite(cathodes[catIndex], cathodeOn[numIndex][catIndex]);
