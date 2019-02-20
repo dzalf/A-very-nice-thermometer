@@ -61,7 +61,12 @@ void loop() {
   }
 
   temperature = acumulator / samples; // To obtain a smoother response
-
+  
+  if (DEBUGGING == DEBUG_ON) {
+    
+    Serial.print("Temp = ");
+    Serial.println(temperature);
+  }
   displayTemperature(temperature);
 
   acumulator = 0.0;
@@ -107,6 +112,20 @@ void displayTemperature(float temp) {
       digitalWrite(outputs[anode], BCD[num[numIndex]][anode]);
     }
     delay(5);
+  }
+  
+     if (DEBUGGING == DEBUG_ON) {
+    
+    Serial.print("Num[0] = ");
+    Serial.print(num[0]);
+    Serial.print("; ");
+    Serial.print("Num[1] = ");
+    Serial.print(num[1]);
+    Serial.print("; ");
+    Serial.print("Num[2] = ");
+    Serial.print(num[2]);
+    Serial.println("; ");
+     
   }
 
 }
