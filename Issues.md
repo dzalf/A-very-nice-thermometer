@@ -16,10 +16,13 @@ b. Rellocate the power supply to be far away from the sensor.
     
 c. **Disclaimer**: This is NOT  a fault rather a technical detail from the Arduino board. The SS pin for the SPI communication is taken by the Tx pin of the Pro Micro. 
 
-The solution was to include a testpoint pin labelled as CS on the board which should be connected to the anode pad from the Tx LED (you will require a nice magnifying glass and a lot of patience to do this)
+The solution was to include a testpoint pin labelled as CS on the board which should be connected to the anode pad from the Tx LED (you will require a nice magnifying glass :mag: or idally a microscope, plenty of flux and a lot of patience to do this)
 
     .
     .
     .
 
  more to be found (hopefully not)
+ 
+ 
+ dzalf
