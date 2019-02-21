@@ -14,7 +14,7 @@ The uploaded firmware drives a CD4511, a BCD to 7 segment decoder/driver. The ca
 **Notes**
 Please keep in mind that this is the first revision of this project. 
 
-It has been fully tested and during this stage minor issues were found on the wiring of the display driver and the regulator section. Please read the issues/disclaimer [file]()
+It has been fully tested and during this stage minor issues were found on the wiring of the display driver and the regulator section. Please read the issues/disclaimer [file](https://github.com/dzalf/A-very-nice-thermometer/blob/master/Issues.md)
 
 Cheers :beer:
 
