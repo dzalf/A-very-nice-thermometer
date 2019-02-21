@@ -22,7 +22,7 @@ dzalf :sunglasses:
 2. Review the power managment block from the PCB
 3. Design the board with an standalone Arduino
 4. Then it could be miniaturised
-5. When ready I will sell this complete populated kits on Tindie!
+5. When ready I will sell this as a kit complete populated  on Tindie!
 
 
 ![alt text](https://github.com/dzalf/A-very-nice-thermometer/blob/master/cuteThermometer/pic1.jpg)
