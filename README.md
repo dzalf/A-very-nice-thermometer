@@ -4,13 +4,17 @@ A decorative thermometer based on the LM95071
 
 This project consists of a decorative piece which its only purpose is to display the current temperature of your room...and nothing else :stuck_out_tongue_winking_eye: . **See images below!**
 
-It uses an Arduino Pro Micro Leonardo and the TI LM95071 as the temperature probe; a digital SPI sensor for which I developed a [library](https://github.com/dzalf/LM95071_Temperature_Sensor). The display is a (cute) DL430M.
+It uses an Arduino Pro Micro Leonardo and the TI LM95071 as the temperature probe; a digital SPI sensor for which I developed a [library](https://github.com/dzalf/LM95071_Temperature_Sensor). The display is a (cute) [DL430M](https://www.electronicaembajadores.com/en/Productos/Detalle/SMDL430M/semiconductors/led-diodes/dl430m-numeric-red-display-3-digits).
 
 The PCB files were drawn in kiCAD and the schematics for the main board and daughter board are included.
 
-The uploaded firmware drives a CD4511, a BCD to 7 segment decoder/driver. The cathodes from the display are sequentially switched and driven using BC850 SMD transistors.
+**Brief description**
+The uploaded firmware drives a CD4511, a BCD to 7 segment decoder/driver. The cathodes from the display are sequentially switched and driven using BC850 SMD transistors. The intensity of the display is controlled through a PWM signal adjusted by a tiny preset onboard.
 
-This is the first revision of this project. It has been tested and during this stage a minor issue was found on the wiring of the display driver. The intensity of the display is controlled through a PWM signal adjusted by a tiny preset onboard
+**Notes**
+Please keep in mind that this is the first revision of this project. 
+
+It has been fully tested and during this stage minor issues were found on the wiring of the display driver and the regulator section. Please read the issues/disclaimer [file]()
 
 Cheers :beer:
 
