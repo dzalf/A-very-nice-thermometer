@@ -9,8 +9,10 @@ jumper to connect is to the nearest GND plane.
 Brainstorm:
 
 a. Ignore this linear power supply and power up the board using the USB from the arduino USB
+
 b. Rellocate the power supply to be far away from the sensor.
-    b.2 Change the position of the sensor to be mounted on the daughter board
+   
+   b.2 Change the position of the sensor to be mounted on the daughter board
     
 c. **Disclaimer**: This is NOT  a fault rather a technical detail from the Arduino board. The SS pin for the SPI communication is taken by the Tx pin of the Pro Micro. 
 
