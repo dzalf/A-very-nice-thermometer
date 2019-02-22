@@ -1,5 +1,5 @@
 # A-very-nice-thermometer
-A decorative thermometer based on the LM95071
+A decorative thermometer based on the LM95071. This project emerged from my very first self-training on KiCAD :sunglasses:
 
 
 This project consists of a decorative piece which its only purpose is to display the current temperature of your room...and nothing else :stuck_out_tongue_winking_eye: . **See images below!**
