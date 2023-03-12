@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cuteThermometer-rescue")(type "KiCad")(uri "${KIPRJMOD}/cuteThermometer-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "Extra-Modules")(type "Legacy")(uri "C:/Users/dmele.DESKTOP-UO9PDPJ/Dropbox/Electrónica/Proyectos electrónicos/Cute Display Thermometer/cuteThermometer/modules.lib")(options "")(descr ""))
+  (lib (name "modules")(type "Legacy")(uri "C:/Users/dmele.DESKTOP-UO9PDPJ/Dropbox/Electrónica/Proyectos electrónicos/Cute Display Thermometer/cuteThermometer/modules.lib")(options "")(descr ""))
+)
